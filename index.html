@@ -1,0 +1,1822 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PayNeax - B2B Services (Recharge, DTH, Bill Payment Etc)</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div
+      class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block"
+    >
+      <div class="container">
+        <div class="row gx-0 align-items-center">
+          <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+              <div class="border-end border-primary pe-3">
+                <a href="#" class="text-muted small"
+                  ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+                  Location</a
+                >
+              </div>
+              <div class="ps-3">
+                <a href="mailto:example@gmail.com" class="text-muted small"
+                  ><i class="fas fa-envelope text-primary me-2"></i
+                  >info@payneax.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex justify-content-end">
+              <div class="d-flex border-end border-primary pe-3">
+                <a class="btn p-0 text-primary me-3" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn p-0 text-primary me-3" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn p-0 text-primary me-3" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn p-0 text-primary me-0" href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-0 mx-lg-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+
+              <!-- Services Dropdown -->
+              <div class="nav-item dropdown dropdown-hover">
+                <a href="service.html" class="nav-link dropdown-toggle">
+                  Services
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="recharge.html" class="dropdown-item"
+                    >Recharge & DTH</a
+                  >
+                  <a href="bill.html" class="dropdown-item">Bill Payment</a>
+                  <a href="money.html" class="dropdown-item">Money Transfer</a>
+                  <a href="aeps.html" class="dropdown-item">AEPS</a>
+                  <a href="website.html" class="dropdown-item"
+                    >Website Development</a
+                  >
+                  <a href="app.html" class="dropdown-item">App Development</a>
+                  <a href="software.html" class="dropdown-item"
+                    >Software Development</a
+                  >
+                  <a href="digital.html" class="dropdown-item"
+                    >Digital Marketing</a
+                  >
+                </div>
+              </div>
+
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a
+                href="https://payneax.com/login"
+                style="color: black; margin-left: 30px; cursor: pointer"
+              >
+                Login / Register
+              </a>
+            </div>
+
+            <a
+              href="#"
+              class="btn btn-secondary py-2 px-4 ms-3 flex-shrink-0"
+              data-bs-toggle="modal"
+              data-bs-target="#onlinePayModal"
+            >
+              Online Pay
+            </a>
+          </div>
+
+          <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+            <a
+              href="#"
+              class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+              data-wow-delay=".9s"
+            >
+              <i class="fa fa-phone-alt fa-2x"></i>
+              <div class="position-absolute" style="top: 7px; right: 12px">
+                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+              </div>
+            </a>
+            <div class="d-flex flex-column ms-3">
+              <span>Call to Our Experts</span>
+              <a href="tel:+917004307718">
+                <span class="text-dark">Free: +91 700 430 7718</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+      <div class="header-carousel-item bg-primary">
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7 animated fadeInLeft">
+                <div class="text-sm-center text-md-start">
+                  <h4 class="text-white text-uppercase fw-bold mb-4">
+                    Welcome To Payneax
+                  </h4>
+                  <h1 class="display-1 text-white mb-4">
+                    Powering India’s B2B Fintech Network
+                  </h1>
+                  <p class="mb-5 fs-5">
+                    PayNeax delivers live, secure, and scalable fintech
+                    solutions for distributors, retailers, and enterprises.
+                    Launch and manage Recharge, DTH, Bill Payments, Money
+                    Transfer, and AEPS with high uptime and real-time
+                    settlements.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
+                  >
+                    <!-- <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a> -->
+                    <a
+                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
+                      href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 animated fadeInRight">
+                <div class="calrousel-img" style="object-fit: cover">
+                  <img
+                    src="img/carousel-2.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-carousel-item bg-primary">
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+              <div class="col-lg-5 animated fadeInLeft">
+                <div class="calrousel-img">
+                  <img
+                    src="img/carousel-2.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 animated fadeInRight">
+                <div class="text-sm-center text-md-end">
+                  <h4 class="text-white text-uppercase fw-bold mb-4">
+                    Welcome To Payneax
+                  </h4>
+                  <h1 class="display-1 text-white mb-4">
+                    Build, Scale & Succeed in Fintech
+                  </h1>
+                  <p class="mb-5 fs-5">
+                    From startups to large distributors, PayNeax empowers
+                    businesses with bank-grade fintech infrastructure.
+                    Experience fast transactions, reliable servers, and
+                    compliant systems designed for high-volume growth.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4"
+                  >
+                    <!-- <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a> -->
+                    <a
+                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
+                      href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light about py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="about-item-content bg-white rounded p-5 h-100">
+              <h4 class="text-primary">About Our Company</h4>
+              <h1 class="display-6 mb-4">
+                Empowering Retailers & Distributors
+              </h1>
+              <p>
+                PayNeax is a trusted B2B fintech service provider offering a
+                complete digital financial services platform for Retailers,
+                Distributors, and Super Distributors across India. We operate on
+                a structured B2B model, enabling our partners to deliver
+                essential financial services to customers efficiently and
+                securely.
+              </p>
+              <h5 class="mb-3"><b>What We Offer</b></h5>
+              <p class="text-dark">
+                <i class="fa fa-check text-primary me-3"></i>B2B Fintech
+                Services Platform
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-check text-primary me-3"></i>Retailer,
+                Distributor & Super Distributor Network
+              </p>
+              <p class="text-dark mb-4">
+                <i class="fa fa-check text-primary me-3"></i>Live Recharge, DTH
+                & Bill Payment Services
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-check text-primary me-3"></i>Domestic Money
+                Transfer (DMT)
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-check text-primary me-3"></i>AEPS &
+                Aadhaar-based Services
+              </p>
+              <p class="text-dark mb-4">
+                <i class="fa fa-check text-primary me-3"></i>Real-Time Wallet &
+                Transaction Reports
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-3 px-5"
+                href="/about.html"
+                >More
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-white rounded p-5 h-100">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <div class="rounded bg-light">
+                    <img
+                      src="img/about-1.png"
+                      class="img-fluid rounded w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="counter-item bg-light rounded p-3 h-100">
+                    <div class="counter-counting">
+                      <span
+                        class="text-primary fs-2 fw-bold"
+                        data-toggle="counter-up"
+                        >20000</span
+                      >
+                      <span class="h1 fw-bold text-primary">+</span>
+                    </div>
+                    <h4 class="mb-0 text-dark">Retailers</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="counter-item bg-light rounded p-3 h-100">
+                    <div class="counter-counting">
+                      <span
+                        class="text-primary fs-2 fw-bold"
+                        data-toggle="counter-up"
+                        >1200</span
+                      >
+                      <span class="h1 fw-bold text-primary">+</span>
+                    </div>
+                    <h4 class="mb-0 text-dark">Distributors</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="counter-item bg-light rounded p-3 h-100">
+                    <div class="counter-counting">
+                      <span
+                        class="text-primary fs-2 fw-bold"
+                        data-toggle="counter-up"
+                        >800</span
+                      >
+                      <span class="h1 fw-bold text-primary">+</span>
+                    </div>
+                    <h4 class="mb-0 text-dark">S. Distributors</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="counter-item bg-light rounded p-3 h-100">
+                    <div class="counter-counting">
+                      <span
+                        class="text-primary fs-2 fw-bold"
+                        data-toggle="counter-up"
+                        >22000</span
+                      >
+                      <span class="h1 fw-bold text-primary">+</span>
+                    </div>
+                    <h4 class="mb-0 text-dark">All Members</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Services</h4>
+          <h1 class="display-4 mb-4">We Provide Best Services</h1>
+          <p class="mb-0">
+            PayNeax offers a complete range of B2B fintech services designed to
+            help Retailers, Distributors, and Super Distributors grow their
+            businesses by delivering essential digital financial services to
+            customers.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/rechargeAndDth.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-mobile fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="recharge.html" class="d-inline-block h4 mb-4"
+                    >Recharge And DTH</a
+                  >
+                  <p class="mb-4">
+                    PayNeax enables retailers to offer instant Mobile and DTH
+                    recharge services for all major operators through a single
+                    B2B platform. With fast processing and high success rates,
+                    retailers can serve customers efficiently while earning
+                    commissions on every transaction.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="recharge.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/Bill payment services made easy.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-bill fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="bill.html" class="d-inline-block h4 mb-4"
+                    >Bill Payment</a
+                  >
+                  <p class="mb-4">
+                    PayNeax provides a reliable solution for utility bill
+                    payments, allowing retailers to collect and process customer
+                    bills conveniently. From electricity and water to gas and
+                    broadband, multiple bill categories are supported on one
+                    platform.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="bill.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/moneyTransfer.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-car fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="money.html" class="d-inline-block h4 mb-4"
+                    >Money Transfer (DMT)</a
+                  >
+                  <p class="mb-4">
+                    With PayNeax Domestic Money Transfer (DMT) services,
+                    retailers can help customers send money safely and quickly
+                    across India. Our system is built to ensure secure
+                    transactions, quick processing, and reliable service
+                    availability.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="money.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/aeps.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="aeps.html" class="d-inline-block h4 mb-4">AEPS</a>
+                  <p class="mb-4">
+                    PayNeax AEPS services enable retailers to offer
+                    Aadhaar-based financial services such as cash withdrawal,
+                    balance enquiry, and mini statement. This service supports
+                    financial inclusion while creating steady earning
+                    opportunities for retailers.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="aeps.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/webDevlopment.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="website.html" class="d-inline-block h4 mb-4"
+                    >Website Development
+                  </a>
+                  <p class="mb-4">
+                    We provide professional website development services
+                    designed to help businesses establish a strong online
+                    presence. Our websites are responsive, user-friendly, and
+                    optimized for performance across all devices. lusion while
+                    generating steady income for retailers.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="website.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/appDevelopement.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="app.html" class="d-inline-block h4 mb-4"
+                    >App Development
+                  </a>
+                  <p class="mb-4">
+                    Our mobile app development services help businesses reach
+                    customers more effectively through intuitive and
+                    feature-rich applications. We develop apps that are
+                    reliable, scalable, and tailored to your business
+                    requirements.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="app.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/softDevel.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="software.html" class="d-inline-block h4 mb-4"
+                    >Software Development
+                  </a>
+                  <p class="mb-4">
+                    We offer custom software development solutions to streamline
+                    business operations and improve efficiency. Our solutions
+                    are designed to match your specific workflow and operational
+                    needs.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="software.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/digitalMark.png"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <!-- <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div> -->
+              </div>
+              <div class="service-content p-4">
+                <div class="service-content-inner">
+                  <a href="digital.html" class="d-inline-block h4 mb-4"
+                    >Digital Marketing
+                  </a>
+                  <p class="mb-4">
+                    Our digital marketing services help businesses grow their
+                    online visibility, generate leads, and build strong brand
+                    presence. We use data-driven strategies to deliver
+                    measurable results.
+                  </p>
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="digital.html"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+            <a
+              class="btn btn-primary rounded-pill py-3 px-5"
+              href="service.html"
+              >More Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service end -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <!-- Section Header -->
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Why Choose PayNeax</h4>
+          <h1 class="display-4 mb-4">Built for Retailers & Distributors</h1>
+          <p class="mb-0">
+            We understand the real challenges faced by retailers and
+            distribution networks. That’s why PayNeax delivers reliable, secure,
+            and easy-to-use fintech solutions designed for daily business
+            operations.
+          </p>
+        </div>
+
+        <!-- Problem vs Solution -->
+        <div class="row g-4 align-items-center">
+          <!-- Problems -->
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <div
+              class="bg-white rounded shadow-sm p-4 h-100 border-start border-4 border-danger"
+            >
+              <h4 class="mb-4 text-danger">Common Problems</h4>
+
+              <p>
+                <i class="fa fa-times text-danger me-2"></i> Complicated and
+                outdated payment systems
+              </p>
+              <p>
+                <i class="fa fa-times text-danger me-2"></i> Slow or failed
+                transactions
+              </p>
+              <p>
+                <i class="fa fa-times text-danger me-2"></i> Limited access in
+                rural and semi-urban areas
+              </p>
+              <p>
+                <i class="fa fa-times text-danger me-2"></i> Complex onboarding
+                and documentation
+              </p>
+              <p class="mb-0">
+                <i class="fa fa-times text-danger me-2"></i> Lack of timely
+                customer support
+              </p>
+            </div>
+          </div>
+
+          <!-- Solutions -->
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div
+              class="bg-white rounded shadow-sm p-4 h-100 border-start border-4 border-success"
+            >
+              <h4 class="mb-4 text-success">PayNeax Solutions</h4>
+
+              <p>
+                <i class="fa fa-check text-success me-2"></i> Simple and modern
+                B2B fintech platform
+              </p>
+              <p>
+                <i class="fa fa-check text-success me-2"></i> Fast, reliable
+                transactions with real-time updates
+              </p>
+              <p>
+                <i class="fa fa-check text-success me-2"></i> Services available
+                via AEPS, micro-ATM & kiosks
+              </p>
+              <p>
+                <i class="fa fa-check text-success me-2"></i> Quick onboarding
+                with paperless KYC
+              </p>
+              <p class="mb-0">
+                <i class="fa fa-check text-success me-2"></i> Dedicated support
+                via phone & email
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.4s">
+          <a href="service.html" class="btn btn-primary rounded-pill py-3 px-5">
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Our Partners start -->
+    <div class="brand-slider">
+      <div
+        class="text-center mx-auto pb-5 wow fadeInUp"
+        data-wow-delay="0.2s"
+        style="max-width: 800px"
+      >
+        <h4 class="text-primary">Our Partners</h4>
+        <h1 class="display-4 mb-4">
+          Empowering Our Partners with Smart Fintech Solutions
+        </h1>
+        <p class="mb-0">
+          PayNeax partners with Retailers, Distributors, and Super Distributors
+          to deliver reliable B2B fintech services that drive growth, increase
+          earnings, and help build long-term customer trust through essential
+          digital financial solutions.
+        </p>
+      </div>
+      <div class="brand-track">
+        <div class="brand-item">
+          <img src="img/brand/1.jpeg" alt="Brand 1" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/2.jpeg" alt="Brand 2" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/3.jpeg" alt="Brand 3" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/4.jpeg" alt="Brand 4" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/5.jpeg" alt="Brand 5" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/6.jpeg" alt="Brand 6" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/7.jpeg" alt="Brand 7" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/8.jpeg" alt="Brand 8" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/9.jpeg" alt="Brand 9" />
+        </div>
+
+        <!-- duplicate for smooth infinite scroll -->
+        <div class="brand-item">
+          <img src="img/brand/1.jpeg" alt="Brand 1" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/2.jpeg" alt="Brand 2" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/3.jpeg" alt="Brand 3" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/4.jpeg" alt="Brand 4" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/5.jpeg" alt="Brand 5" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/6.jpeg" alt="Brand 6" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/7.jpeg" alt="Brand 7" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/8.jpeg" alt="Brand 8" />
+        </div>
+        <div class="brand-item">
+          <img src="img/brand/9.jpeg" alt="Brand 9" />
+        </div>
+      </div>
+    </div>
+    <!-- Our Partners end -->
+
+    <!-- Blog Start -->
+    <!-- <div class="container-fluid blog bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">From Blog</h4>
+                    <h1 class="display-4 mb-4">News And Updates</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Business</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
+                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Business</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
+                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Business</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
+                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Blog End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Team</h4>
+                    <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid contact bg-light py-5">
+      <div class="container py-5">
+        <!-- <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Contact Us</h4>
+                    <h1 class="display-4 mb-4">If you have any comments please apply now</h1>
+                </div> -->
+        <div class="row g-5">
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-white rounded p-5 h-100">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <div class="rounded bg-light">
+                    <img
+                      src="img/112.avif"
+                      class="img-fluid rounded w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+            <div>
+              <h4 class="text-primary">Contact Us</h4>
+              <h4 class="lh-base mb-4">
+                Feel free to reach out with any questions about the book,
+                speaking engagements, or media inquiries.
+              </h4>
+              <form>
+                <div class="row g-3">
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control border-0"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control border-0"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="form-floating">
+                      <input
+                        type="phone"
+                        class="form-control border-0"
+                        id="phone"
+                        placeholder="Phone"
+                      />
+                      <label for="phone">Your Phone</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control border-0"
+                        id="project"
+                        placeholder="Project"
+                      />
+                      <label for="project">Your Project</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control border-0"
+                        id="subject"
+                        placeholder="Subject"
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control border-0"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 120px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-xl-12">
+            <div class="mb-5">
+              <div class="row g-3 flex-nowrap overflow-auto">
+                <!-- Logo + About -->
+                <div class="col-xl-3 col-lg-3 col-md-4">
+                  <div class="footer-item">
+                    <a href="index.html">
+                      <img width="180px" src="img/logo-2.png" alt="Logo" />
+                    </a>
+                    <p class="text-white mb-4">
+                      PayNeax is a trusted B2B fintech service provider offering
+                      a complete digital financial services platform for
+                      Retailers, Distributors, and Super Distributors across
+                      India.
+                    </p>
+                    <div class="footer-btn d-flex">
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle" href="#"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a href="software.html"
+                      ><i class="fas fa-angle-right me-2"></i>Software
+                      Development</a
+                    >
+                    <a href="app.html"
+                      ><i class="fas fa-angle-right me-2"></i>App Development</a
+                    >
+                    <a href="website.html"
+                      ><i class="fas fa-angle-right me-2"></i>Web Development</a
+                    >
+                    <a href="digital.html"
+                      ><i class="fas fa-angle-right me-2"></i>Digital
+                      Marketing</a
+                    >
+                    <a href="recharge.html"
+                      ><i class="fas fa-angle-right me-2"></i>Recharge & DTH</a
+                    >
+                    <a href="money.html"
+                      ><i class="fas fa-angle-right me-2"></i>Money Transfer</a
+                    >
+                    <a href="bill.html"
+                      ><i class="fas fa-angle-right me-2"></i>Bill Payment</a
+                    >
+                    <a href="aeps.html"
+                      ><i class="fas fa-angle-right me-2"></i>AEPS</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Company -->
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Company</h4>
+                    <a href="about.html"
+                      ><i class="fas fa-angle-right me-2"></i>About Us</a
+                    >
+                    <a href="service.html"
+                      ><i class="fas fa-angle-right me-2"></i>Services</a
+                    >
+                    <a href="contact.html"
+                      ><i class="fas fa-angle-right me-2"></i>Contact</a
+                    >
+                    <a href="refundPolicy.html"
+                      ><i class="fas fa-angle-right me-2"></i>Refund Policy</a
+                    >
+                    <a href="privacyPolicy.html"
+                      ><i class="fas fa-angle-right me-2"></i>Privacy Policy</a
+                    >
+                    <a href="terms.html"
+                      ><i class="fas fa-angle-right me-2"></i>Terms &
+                      Conditions</a
+                    >
+                    <a href="faq.html"
+                      ><i class="fas fa-angle-right me-2"></i>FAQ</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Payments -->
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Payments</h4>
+                    <a href="upiPayment.html"
+                      ><i class="fas fa-angle-right me-2"></i>UPI</a
+                    >
+                    <a href="onlinePayment.html"
+                      ><i class="fas fa-angle-right me-2"></i>Online</a
+                    >
+                    <a href="bankPayment.html"
+                      ><i class="fas fa-angle-right me-2"></i>Bank</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-xl-3 col-lg-3 col-md-4">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p class="text-white mb-3">
+                      Subscribe for updates. We never share your email.
+                    </p>
+                    <div class="position-relative rounded-pill">
+                      <input
+                        class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                        type="email"
+                        placeholder="Enter your email"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-5"
+              style="border-top: 1px solid rgba(255, 255, 255, 0.08)"
+            >
+              <div class="row g-0">
+                <div class="col-12">
+                  <div class="row g-4">
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">1ST Branch Address</h4>
+                          <p class="mb-0">
+                            I 48 LAJPAT NAGAR, NEAR BACK SIDE RAILWAY STATION
+                            NEW DELHI,PIN CODE-110024
+                          </p>
+                        </div>
+                      </div>
+                      <div class="pt-4 d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">2nd Branch Address</h4>
+                          <p class="mb-0">
+                            VILL PS- MAIN ROAD BAHERA MORE . DOBHI GAYA BIHAR
+                            PIN CODE-824220
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                      <div class="d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">Mail Us</h4>
+                          <p class="mb-0">info@payneax.com</p>
+                        </div>
+                      </div>
+                      <div class="pt-5 d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fa fa-phone-alt fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">Phone</h4>
+                          <p class="mb-0">+91 700 430 7718</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <span class="text-body"
+          ><a href="#" class="border-bottom text-white"
+            ><i class="fas fa-copyright text-light me-2"></i>Ads Innovation
+            Private Limited</a
+          >, All right reserved.</span
+        >
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- Online Pay Modal Start -->
+    <div
+      class="modal fade"
+      id="onlinePayModal"
+      tabindex="-1"
+      aria-labelledby="onlinePayModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="onlinePayModalLabel">
+              Scan & Pay with UPI
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body text-center">
+            <p class="mb-3 fw-bold">ADS INNOVATION PRIVATE LIMITED</p>
+
+            <!-- QR IMAGE -->
+            <img
+              src="img/qrCode.png"
+              alt="UPI QR Code"
+              class="img-fluid mb-3"
+              style="max-width: 260px"
+            />
+
+            <p class="mb-1">
+              <strong>UPI ID:</strong>
+            </p>
+            <p class="text-primary fw-bold">cnb.298720252948@cnrb</p>
+
+            <small class="text-muted">
+              Scan & pay using any UPI app (GPay, PhonePe, Paytm, BHIM)
+            </small>
+          </div>
+
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Online Pay Modal End -->
+
+    <div class="modal fade" id="authModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content auth-modal">
+          <!-- Close Button -->
+          <button
+            type="button"
+            class="btn-close auth-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs auth-tabs">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#loginTab"
+              >
+                Login
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#registerTab"
+              >
+                Register
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#forgotTab"
+              >
+                Forgot
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content p-4">
+            <!-- LOGIN -->
+            <div class="tab-pane fade show active" id="loginTab">
+              <h3 class="text-center mb-4">Welcome Back</h3>
+
+              <input
+                class="form-control auth-input"
+                placeholder="Email or Mobile"
+              />
+              <input
+                type="password"
+                class="form-control auth-input"
+                placeholder="Password"
+              />
+
+              <div class="text-center">
+                <button class="btn btn-primary auth-btn">Login</button>
+              </div>
+            </div>
+
+            <!-- REGISTER -->
+            <div class="tab-pane fade" id="registerTab">
+              <h3 class="text-center mb-4">Create an Account</h3>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="Email" />
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="Mobile" />
+                </div>
+                <div class="col-md-6">
+                  <select class="form-control auth-input">
+                    <option>Choose type</option>
+                    <option>Retailer</option>
+                    <option>Distributor</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="date" class="form-control auth-input" />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Address"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <select class="form-control auth-input">
+                    <option>Select State</option>
+                    <option>Delhi</option>
+                    <option>Maharashtra</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="City" />
+                </div>
+
+                <div class="col-12">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Remarks (Optional)"
+                  />
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-success auth-btn">Register</button>
+              </div>
+            </div>
+
+            <!-- FORGOT -->
+            <div class="tab-pane fade" id="forgotTab">
+              <h3 class="text-center mb-4">Forgot Password</h3>
+
+              <input
+                class="form-control auth-input"
+                placeholder="Enter Email or Mobile"
+              />
+
+              <div class="text-center">
+                <button class="btn btn-warning auth-btn">Send OTP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Online Pay Modal Start -->
+    <div
+      class="modal fade"
+      id="onlinePayModal"
+      tabindex="-1"
+      aria-labelledby="onlinePayModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="onlinePayModalLabel">
+              Scan & Pay with UPI
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body text-center">
+            <p class="mb-3 fw-bold">ADS INNOVATION PRIVATE LIMITED</p>
+
+            <!-- QR IMAGE -->
+            <img
+              src="img/qrCode.png"
+              alt="UPI QR Code"
+              class="img-fluid mb-3"
+              style="max-width: 260px"
+            />
+
+            <p class="mb-1">
+              <strong>UPI ID:</strong>
+            </p>
+            <p class="text-primary fw-bold">cnb.298720252948@cnrb</p>
+
+            <small class="text-muted">
+              Scan & pay using any UPI app (GPay, PhonePe, Paytm, BHIM)
+            </small>
+          </div>
+
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Online Pay Modal End -->
+
+    <div class="modal fade" id="authModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content auth-modal">
+          <!-- Close Button -->
+          <button
+            type="button"
+            class="btn-close auth-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs auth-tabs">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#loginTab"
+              >
+                Login
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#registerTab"
+              >
+                Register
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#forgotTab"
+              >
+                Forgot
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content p-4">
+            <!-- LOGIN -->
+            <div class="tab-pane fade show active" id="loginTab">
+              <h3 class="text-center mb-4">Welcome Back</h3>
+
+              <input
+                class="form-control auth-input"
+                placeholder="Email or Mobile"
+              />
+              <input
+                type="password"
+                class="form-control auth-input"
+                placeholder="Password"
+              />
+
+              <div class="text-center">
+                <button class="btn btn-primary auth-btn">Login</button>
+              </div>
+            </div>
+
+            <!-- REGISTER -->
+            <div class="tab-pane fade" id="registerTab">
+              <h3 class="text-center mb-4">Create an Account</h3>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="Email" />
+                </div>
+
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="Mobile" />
+                </div>
+                <div class="col-md-6">
+                  <select class="form-control auth-input">
+                    <option>Choose type</option>
+                    <option>Retailer</option>
+                    <option>Distributor</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="date" class="form-control auth-input" />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Address"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <select class="form-control auth-input">
+                    <option>Select State</option>
+                    <option>Delhi</option>
+                    <option>Maharashtra</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control auth-input" placeholder="City" />
+                </div>
+
+                <div class="col-12">
+                  <input
+                    class="form-control auth-input"
+                    placeholder="Remarks (Optional)"
+                  />
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-success auth-btn">Register</button>
+              </div>
+            </div>
+
+            <!-- FORGOT -->
+            <div class="tab-pane fade" id="forgotTab">
+              <h3 class="text-center mb-4">Forgot Password</h3>
+
+              <input
+                class="form-control auth-input"
+                placeholder="Enter Email or Mobile"
+              />
+
+              <div class="text-center">
+                <button class="btn btn-warning auth-btn">Send OTP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/919355238848"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a
+      href="https://wa.me/919355238848"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
